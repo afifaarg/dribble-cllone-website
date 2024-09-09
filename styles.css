@@ -89,12 +89,14 @@ nav {
 
 /* Left section styles */
 .left-section {
+    
     display: flex;
     flex-direction: row;
     flex: 1;
     align-items: start; /* Align the image and text vertically */
     position: relative;
 }
+
 .left-section img{
     border-radius: 20px;
 }
@@ -110,12 +112,14 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 5px;
 }
 
 .first-text h1 {
     font-size: 7rem; /* Large text for 'Teach' */
     font-weight: 1000;
     margin: 0;
+    line-height: 1; 
 }
 
 .first-text h2 {
@@ -123,19 +127,20 @@ nav {
     letter-spacing: 0.1em;
     font-weight: 400;
     margin: 0;
+    line-height: 1; 
 }
 .second-text {
     display: flex;
     flex-direction: column;
-    margin-left: 200px;
     justify-content: center;
-
 }
 
 .second-text h1 {
     font-size: 10rem; /* Large text for 'money' */
     font-weight: 900;
     margin: 0; /* Remove default margin */
+    margin-left: 50px; 
+    margin-bottom: 5px;
     line-height: 1; /* Adjust line-height to reduce space below */
 }
 
@@ -144,6 +149,7 @@ nav {
     letter-spacing: 0.1em;
     font-weight: 400;
     margin: 0; /* Remove default margin */
+    margin-left: 200px; 
     line-height: 1; /* Adjust line-height to reduce space above */
 }
 
@@ -165,25 +171,24 @@ nav {
     display: flex;
     align-items: center;
     border: solid #333 1px;
-    border-radius: 50px;
-    padding-inline: 15px; /* Adjust padding as needed */
-    margin-top: 20px;
-    padding-block: 5px; /* Adjust padding as needed */
-    margin-right: 20px; /* Remove margin to avoid extra space */
+    border-radius: 40px;
+    padding-inline: 10px; /* Adjust padding as needed */
+    margin-top: -5px;
+    padding-block: 10px; /* Adjust padding as needed */
+    margin-left: 15px; /* Remove margin to avoid extra space */
 }
 
 .text {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: bold;
     margin-right: 10px; /* Space between text and image */
 }
 
 .money-img img {
-    width: 100px; /* Adjust size if needed */
+    width: 75px; /* Adjust size if needed */
     height: 75; /* Adjust size if needed */
     margin: 0; /* Ensure no extra margin */
 }
-
 
 .credit-desc {
     display: flex;
