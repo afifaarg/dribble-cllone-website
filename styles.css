@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body{
+    background-image: linear-gradient(to right, #faddd3 0%,#fbe0bd 50%, #faddd3 70%, #faddd3ee 100%);
+    padding: 5px 55px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Styling logo*/
+.logo{
+    padding:1vh 1vw;
+    text-align: center;
+}
+.logo img {
+    height: 5rem;
+    width: 5rem;
+}
+
+
+/*Styling Links*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This spreads out the elements: logo, nav-links, and button */ /* You can set any background color */
+}
+
+.logo img {
+    width: 100px; /* Adjust the logo size */
+}
+
+.hamburger {
+    display: none; /* Hidden by default unless needed for smaller screens */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-links div {
+    margin: 0 25px; /* Space between the links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333; /* Adjust link color */
+    font-size: 16px;
+    font-weight: bold;
+}
+.nav-links a:hover{
+    color: #fdfbf8;
+}
+.btn-action {
+    margin-left: auto; /* Pushes the join button to the right */
+}
+
+.join-button {
+    padding: 10px 40px;
+    background-color: rgb(204,230,145);
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+/* For mobile view, you can make the hamburger icon visible */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+
+/* Main container setup */
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center; /* Centers vertically */
+    justify-content: space-between; /* Adds space between sections */
+}
+
+/* Left section styles */
+.left-section {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: start; /* Align the image and text vertically */
+    position: relative;
+}
+.left-section img{
+    border-radius: 20px;
+}
+.main-image {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    margin-right: 10px; /* Space between image and text */
+   
+}
+
+.first-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first-text h1 {
+    font-size: 7rem; /* Large text for 'Teach' */
+    font-weight: 1000;
+    margin: 0;
+}
+
+.first-text h2 {
+    font-size: 4rem; /* Smaller text for 'your preschoolers' */
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    margin: 0;
+}
+.second-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    justify-content: center;
+
+}
+
+.second-text h1 {
+    font-size: 10rem; /* Large text for 'money' */
+    font-weight: 900;
+    margin: 0; /* Remove default margin */
+    line-height: 1; /* Adjust line-height to reduce space below */
+}
+
+.second-text h2 {
+    font-size: 4rem; /* Smaller text for 'habits' */
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    margin: 0; /* Remove default margin */
+    line-height: 1; /* Adjust line-height to reduce space above */
+}
+
+.right-section {
+    position: absolute; /* Absolute positioning relative to main-container */
+    display: flex;
+    width:350px;
+    top: 390px; /* Adjust position if needed */
+    left: 290px; /* Adjust position if needed */
+    z-index: 1; /* Overlay but under main content */
+    /* background-image: linear-gradient(to right, #ffecd2 0%,rgb(252, 252, 252) 100%); */
+    border-radius: 50px;
+    padding: 10px; /* Remove padding to avoid extra space */
+    margin: 0; /* Ensure no extra margin */
+}
+
+/* Text and image within the right section */
+.text-svg {
+    display: flex;
+    align-items: center;
+    border: solid #333 1px;
+    border-radius: 50px;
+    padding-inline: 15px; /* Adjust padding as needed */
+    margin-top: 20px;
+    padding-block: 5px; /* Adjust padding as needed */
+    margin-right: 20px; /* Remove margin to avoid extra space */
+}
+
+.text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-right: 10px; /* Space between text and image */
+}
+
+.money-img img {
+    width: 100px; /* Adjust size if needed */
+    height: 75; /* Adjust size if needed */
+    margin: 0; /* Ensure no extra margin */
+}
+
+
+.credit-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure vertical alignment */
+    margin: 10px;
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.credit-desc .credit-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    border-radius: 50px;
+    padding:20px;
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+}
+
+.credit-desc .credit-card .img-cont img {
+    border-radius: 25px;
+    width: 300px;
+}
+
+.credit-desc .credit-card .text-credit .textLesson {
+    background-color: rgb(204, 230, 145);
+    color:#333;
+    max-width: fit-content;
+    border-radius: 10px;
+    padding-inline: 10px;
+    font-weight: 500;
+    margin: 2px;
+}
+
+.credit-desc .credit-card .text-credit h5 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 500px;
+    margin: 2px;
+}
+.credit-desc .credit-card .text-credit .bank-desc {
+    color: #333;
+    margin: 2px;
+    max-width: 250px;
+    text-align: justify;
+}
+
+.credit-desc .text-askbun {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center the bunny section */
+    margin-left: 20px; /* Add a bit of spacing if necessary */
+    
+}
+
+.credit-desc .text-askbun .text {
+    padding: 30px;
+    padding-right: 150px;
+    font-size: 16px;
+    font-weight: 900;
+    border: solid #333 1px;
+    border-radius: 50px;
+    margin-right: 10px;
+    width: 300px;
+    max-width: 250px;
+    text-align: justify;
+}
+
+.credit-desc .text-askbun .bunny-img img {
+    position: absolute;
+    width: 150px; /* Set a fixed size for the bunny image */
+    height: auto;
+    right:-2px;
+    top: -25px;
+    border-radius: 75px;
+}
+
+.second-section {
+    margin-top: 50px;
+}
+.second-section .first-slide{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+.second-section .text-side{
+    width: 50%;
+}
+.second-section .text-side h2{
+    font-size:2.7rem;
+    padding: 20px;
+
+}
+
+.second-section .self-desc {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    width: 50%;
+    border-radius: 75px;
+    padding:0;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(16px);
+    
+}
+
+.second-section .self-desc .text {
+    color: #333;
+    margin: 2px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.second-section .self-desc .bunny-img img {
+    width: 250px; /* Set a fixed size for the bunny image */
+    height: 250px;
+    margin: 0;
+    border-radius: 75px;
+}
+
+.second-section .second-slide{
+    display: flex;
+    margin-top: 25px;
+    align-items: start;
+    flex-direction: row;
+}
+
+.second-section .ryan-side{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.second-section .ryan-desc{
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    flex-direction: row;
+}
+
+.second-section .ryan-desc {
+    display: flex;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(16px);
+    
+}
+
+.second-section .ryan-desc .lego-img img{
+    width: 150px; /* Set a fixed size for the bunny image */
+    height: 150px;
+    margin: 0;
+    margin-left:75px;
+}
+.btn-edit {
+    padding: 10px 20px;
+    background-color: rgb(204,230,145);
+    color: #333;
+    font-weight: bold;
+    /* margin: 2px; */
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.second-section .ryan-side .text {
+    color: #333;
+    margin: 2px;
+    padding: 7px;
+    padding-block: 0;
+    font-size: 16px;
+    text-align: justify;
+}
+.second-section .ryan-side .text h3{
+    color: #333;
+    line-height:1;
+    margin: 0;
+}
+.second-section .ryan-side .text p{
+    color: #b6b4b4;
+    font-size: smaller;
+    line-height:1;
+}
+
+
+.second-section .ryan-side .user-img img {
+    width: 120px; /* Set a fixed size for the bunny image */
+    height: 120px;
+    margin-left:20px;
+    border-radius: 17px;
+}
+
+.second-section .question-grp{
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(16px);
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 50px;
+}
+.second-section .question-grp .qst{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding-inline: 10px;
+    justify-content: space-between;
+    
+}
+.second-section .question-grp .question1 {
+    display: flex;
+    align-items: center;
+    background: rgba(233, 220, 220, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(16px);
+    border-radius: 50px;
+    padding-inline: 25px;
+}
+.second-section .question-grp .question2 {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    background: rgba(233, 220, 220, 0.5);  /* Semi-transparent background */
+    backdrop-filter: blur(16px);
+    border-radius: 50px;
+    padding-inline: 25px;
+}
+.second-section h4{
+    margin-right: 10px;
+    font-size: 18px;
+}
+.second-slide .emoji{
+    border-radius: 50px;
+    margin-left:75px;
+}
+.second-section .emoji img{
+    width: 70px; /* Set a fixed size for the bunny image */
+    height: auto;
+}
+.container {
+    text-align: left;
+    padding-left: 40px;
+    border-radius: 15px; 
+}
+
+.btn-side{
+    margin-left: 50px;
+    width: 50%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 2px;
+    color: #555;
+}
+
+.button-circle {
+    display: inline-block;
+    background: radial-gradient(circle at center, #ff6f6f, #febb88);
+    box-shadow: 0px 10px 30px rgba(214, 213, 213, 0.863);
+    width: 300px;
+    height: 300px;
+    right:0px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-circle span {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.btn-paw{
+    display: flex;
+    justify-content: space-between;  
+}
+
+
+.cat-paw img {
+    margin-top: 100px;
+    margin-right: 30px;
+    width: 250px;
+    height: 275px;
+}
+/* Additional styles for responsive behavior */
+/* Base styles (unchanged) */
+/* Responsive styles */
+@media (max-width: 1024px) {
+    /* Adjust for tablets and small desktops */
+    .main-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    body{
+        padding: 5px 25px;
+    }
+    .left-section, .right-section{
+        width: 100%;
+    }
+    
+    .text-svg {
+        padding-inline: 5px; /* Adjust padding as needed */
+        padding-block: 2px; /* Adjust padding as needed */
+        margin-right: 10px; /* Remove margin to avoid extra space */
+    }
+    .main-image {
+        width: 300px; /* Adjust image size for tablets */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .first-text h1 {
+        font-size: 4rem; /* Adjust font size */
+    }
+
+    .first-text h2 {
+        font-size: 2rem;
+    }
+    .second-text{
+        margin-left: 0;
+    }
+    .second-text h1 {
+        font-size: 6rem; /* Adjust font size */
+    }
+
+    .second-text h2 {
+        font-size: 3rem;
+    }
+    .text-svg {
+        position: absolute; /* Maintain absolute positioning relative to its container */
+        top: 250px; /* Adjust top position */
+        left: 10px; /* Adjust left position */
+        width: 90%; /* Full width with some margin */
+        max-width: 350px; /* Set max width to prevent it from getting too large */
+        padding: 10px; /* Adjust padding for smaller screens */
+        text-align: center; /* Center text inside */
+    }
+
+    .money-img img {
+        width: 80px; /* Adjust size for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust for mobile devices */
+    body{
+        padding: 5px 25px;
+    }
+    .text-svg {
+        position: absolute; /* Change to static for mobile view */
+        width: 100%; /* Full width on mobile */
+        margin-top: 20px; /* Add margin for spacing */
+        text-align: center; /* Center text inside */
+    }
+    .text-svg{
+        display: none;
+    }
+    .main-container{
+        text-align: center;
+    }
+
+    .credit-desc {
+        width: 100%;
+        margin: 2px;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+    .credit-desc .credit-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        padding:0;
+    
+    }
+    
+    .credit-desc .credit-card .img-cont img {
+        width: 75px;
+    }
+    
+    .credit-desc .credit-card .text-credit .textLesson {
+        background-color: rgb(204, 230, 145);
+        color:#333;
+        border-radius: 10px;
+        padding-inline: 2px;
+        font-weight: 500;
+        text-align: start;
+    }
+    
+    .credit-desc .credit-card .text-credit h5 {
+        text-align: start;
+    }
+    .credit-desc .credit-card .text-credit .bank-desc {
+        color: #333;
+        margin: 2px;
+        text-align: justify;
+    }
+    
+    .credit-desc .text-askbun {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Center the bunny section */
+        margin-left: 5px; /* Add a bit of spacing if necessary */
+        
+    }
+    
+    .credit-desc .text-askbun .text {
+        padding-right: 150px;
+        font-size: 16px;
+        font-weight: 900;
+        border: solid #333 1px;
+        border-radius: 50px;
+        margin-right: 10px;
+        width: 350px;
+        max-width: 250px;
+        text-align: justify;
+    }
+    
+    .credit-desc .text-askbun .bunny-img img {
+        position: absolute;
+        width: 150px; /* Set a fixed size for the bunny image */
+        height: auto;
+        right:-4px;
+        top: -2px;
+        border-radius: 75px;
+    }
+    
+    .money-img img {
+        width: 60px; /* Further adjust size for mobile screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .nav-links {
+        display: none; /* Hide nav links on mobile */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu */
+    }
+
+    .btn-action {
+        margin-left: 0; /* Center button */
+        text-align: center;
+    }
+
+    .join-button {
+        margin: 0 auto; /* Center the button */
+    }
+
+    .main-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-section {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-image {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .first-text h1 {
+        font-size: 3rem; /* Adjust font size */
+    }
+
+    .first-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .second-text {
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+
+    .credit-desc {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .credit-desc .credit-card,
+    .credit-desc .text-askbun {
+        width: 100%;
+        margin: 10px 0; /* Add spacing between elements */
+    }
+
+    .credit-desc .credit-card .img-cont img {
+        width: 100%; /* Full width on mobile */
+        height: auto;
+    }
+
+    .credit-desc .text-askbun .text {
+        width: 100%; /* Full width on mobile */
+        padding-right: 0; /* Remove right padding */
+    }
+
+    .credit-desc .text-askbun .bunny-img img {
+        width: 100px; /* Adjust bunny image size for mobile */
+        height: auto;
+        position: relative; /* Change position for mobile */
+    }
+    .second-section .first-slide{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .second-section .text-side{
+        width: 100%;
+    }
+    .second-section .text-side h2{
+        font-size:3rem;
+        text-align: center;
+        padding: 5px;
+    
+    }
+    
+    .second-section .self-desc {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        width: 100%;
+        margin-left: 0; 
+    }
+    
+    .second-section .self-desc .text {
+        color: #333;
+        font-size: 16px;
+        text-align: justify;
+        text-align: center;
+    }
+    
+    .second-section .self-desc .bunny-img img {
+        width: 100%; /* Set a fixed size for the bunny image */
+        height: 250px;
+        margin: 0;
+        border-radius: 75px;
+    }
+    
+    .second-section .second-slide{
+        flex-direction: column;
+        
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #333;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 1rem;
+        margin-bottom: 2px;
+        color: #555;
+        text-align: center;
+    }
+    
+    .button-circle {
+        display: inline-block;
+        background: radial-gradient(circle at center, #ff6f6f, #febb88);
+        box-shadow: 0px 10px 30px rgba(214, 213, 213, 0.863);
+        width: 300px;
+        height: 300px;
+        right:0px;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .button-circle span {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .btn-side{
+        margin-left: 5px;
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust for very small screens */
+    body{
+        padding: 0;
+    }
+    .main-container {
+        padding: 5px;
+    }
+
+    .first-text h1 {
+        font-size: 2.5rem; /* Smaller font size */
+    }
+
+    .first-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .second-text h1 {
+        font-size: 2rem;
+    }
+
+    .second-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .credit-desc .credit-card,
+    .credit-desc .text-askbun {
+        width: 100%;
+        padding: 10px; /* Add padding */
+    }
+
+    .credit-desc .credit-card .img-cont img {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .credit-desc .text-askbun .text {
+        font-size: 14px; /* Smaller text size */
+    }
+
+    .credit-desc .text-askbun .bunny-img img {
+        width: 80px; /* Adjust bunny image size */
+    }
+}
