@@ -326,6 +326,7 @@ nav {
 
 .second-section .ryan-side{
     display: flex;
+    width: 100vw;
     align-items: center;
     flex-direction: column;
 }
@@ -341,7 +342,6 @@ nav {
     border-radius: 50px;
     background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
     backdrop-filter: blur(16px);
-    
 }
 
 .second-section .ryan-desc .lego-img img{
@@ -350,6 +350,7 @@ nav {
     margin: 0;
     margin-left:75px;
 }
+
 .btn-edit {
     padding: 10px 20px;
     background-color: rgb(204,230,145);
@@ -785,6 +786,12 @@ p {
         margin-left: 5px;
         width: 100%;
         
+    }
+    .second-section .ryan-desc .lego-img img{
+        width: 50px; /* Set a fixed size for the bunny image */
+        height: 50px;
+        margin: 0;
+        margin-left:20px;
     }
 }
 
