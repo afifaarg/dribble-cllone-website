@@ -489,62 +489,6 @@ p {
 /* Additional styles for responsive behavior */
 /* Base styles (unchanged) */
 /* Responsive styles */
-@media (max-width: 1024px) {
-    /* Adjust for tablets and small desktops */
-    .main-container {
-        flex-direction: column;
-        padding: 20px;
-    }
-    body{
-        padding: 5px 25px;
-    }
-    .left-section, .right-section{
-        width: 100%;
-    }
-    
-    .text-svg {
-        padding-inline: 5px; /* Adjust padding as needed */
-        padding-block: 2px; /* Adjust padding as needed */
-        margin-right: 10px; /* Remove margin to avoid extra space */
-    }
-    .main-image {
-        width: 300px; /* Adjust image size for tablets */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    .first-text h1 {
-        font-size: 4rem; /* Adjust font size */
-    }
-
-    .first-text h2 {
-        font-size: 2rem;
-    }
-    .second-text{
-        margin-left: 0;
-    }
-    .second-text h1 {
-        font-size: 6rem; /* Adjust font size */
-    }
-
-    .second-text h2 {
-        font-size: 3rem;
-    }
-    .text-svg {
-        position: absolute; /* Maintain absolute positioning relative to its container */
-        top: 250px; /* Adjust top position */
-        left: 10px; /* Adjust left position */
-        width: 90%; /* Full width with some margin */
-        max-width: 350px; /* Set max width to prevent it from getting too large */
-        padding: 10px; /* Adjust padding for smaller screens */
-        text-align: center; /* Center text inside */
-    }
-
-    .money-img img {
-        width: 80px; /* Adjust size for smaller screens */
-        height: auto; /* Maintain aspect ratio */
-    }
-}
-
 @media (max-width: 768px) {
     /* Adjust for mobile devices */
     body{
